@@ -8,24 +8,42 @@
     <link rel="stylesheet" href="../fontawesome-free-5.15.1-web/css/all.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
     <title>FCC: Tribute Page</title>
 </head>
 <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script>
+        function darkMode(){
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+            var x = document.getElementById("toggleText");
+            if (x.innerHTML === "Dark") {
+                x.innerHTML = "Light";
+            } else {
+                x.innerHTML = "Dark";
+            }        
+        }
+    </script>
+
+    <div class="dark-mode-button-wrapper">
+        <button onclick="darkMode();"><i class="fas fa-adjust"></i></button><p id="toggleText">Light</p>   
+    </div>
+
     <header id="header">
         <div class="header-wrapper">
             <div class="title-wrapper">
                 <h1 id="title">Buckminster Fuller</h1>
                 <p>“You never change things by fighting the existing reality. To change something, build a new model that makes the existing model obsolete.”</p>
             </div>
-                <!-- A SIMPLE HORIZONTAL LINE BUT LONGER -->
-                <div id="line-longer"></div>
+            <!-- A SIMPLE HORIZONTAL LINE BUT LONGER -->
+            <div id="line-longer"></div>
             <div id="img-div">
                 <div class="img-wrapper">
                     <img src="img/Buckminster_Fuller-BE043654.jpg" alt="" id="image">
                 </div>
                 <figcaption id="img-caption">
-                    Buckminster Fuller standing infront of one of his geodesic domes.
+                   - Buckminster Fuller standing infront of one of his geodesic domes. -
                 </figcaption>
             </div>
         </div>

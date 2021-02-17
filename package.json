@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass -w scss/ -o css/ --recursive"
+    "sass": "node-sass -w scss -o css --recursive"
   },
   "keywords": [
     "freecodecamp",
@@ -13,7 +13,16 @@
   ],
   "author": "Mike Beckett",
   "license": "ISC",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "node-sass": "^4.14.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mickbeck/tribute_page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mickbeck/tribute_page/issues"
+  },
+  "homepage": "https://github.com/mickbeck/tribute_page#readme"
 }
